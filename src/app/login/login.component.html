@@ -1,0 +1,13 @@
+<h3>welcome for the Login form</h3>
+<form >Login</form>
+<div class="input">
+    <label for="name">Username</label>
+    <input type="text" name="username" [(ngModel)]="username">
+</div>
+<div class="input">
+    <label for="password">password</label>
+    <input type="password" name="password" [(ngModel)]="password">
+</div>
+<div class="input">
+    <input type="submit" value="login" (click)="loginUser()">
+</div>
