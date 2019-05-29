@@ -1,13 +1,37 @@
-<h3>welcome for the Login form</h3>
-<form >Login</form>
-<div class="input">
-    <label for="name">Username</label>
-    <input type="text" name="username" [(ngModel)]="username">
-</div>
-<div class="input">
-    <label for="password">password</label>
-    <input type="password" name="password" [(ngModel)]="password">
-</div>
-<div class="input">
-    <input type="submit" value="login" (click)="loginUser()">
+<div class="container">
+  <div class="row">
+    <div class="col-md-4"   >
+  <img src="https://images.wallpaperscraft.com/image/flower_pink_petals_bud_close_up_119905_320x240.jpg" class="img-responsive img-thumnail" alt="" />
+    </div>
+    <div class="col-md-8">
+    <form action="">
+      <div class="form-group">
+        <label for="name">Username</label>
+        <input
+          class="form-control"
+          id="myInput"
+          type="text"
+          value=''
+          placeholder="Please Enter your Name "
+          name="username"
+          [(ngModel)]="username"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          class="form-control"
+          id="myInput"
+          type="password"
+          value=''
+          placeholder="please enter password"
+          name="password"
+          [(ngModel)]="password"
+        />
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="loginUser()">Submit
+      </button>
+     </form>
+    </div>
+  </div>
 </div>
