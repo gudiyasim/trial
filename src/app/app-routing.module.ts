@@ -10,13 +10,16 @@ import { VchatComponent } from './vchat/vchat.component';
 import { ContactComponent } from './contact/contact.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HomeComponent } from './home/home.component';
+import { SupportComponent } from './support/support.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'Login', component: LoginComponent},
   {path: 'Link', component: LinkComponent},
   {path: 'Contact', component: ContactComponent},
-  {path: 'Logout', component: LogoutComponent}
+  {path: 'Logout', component: LogoutComponent},
+  {path: 'Support', component: SupportComponent},
+  {path: 'Vchat', component: VchatComponent}
 ];
 
 @NgModule({
