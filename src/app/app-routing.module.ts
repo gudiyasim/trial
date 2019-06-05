@@ -19,7 +19,9 @@ const routes: Routes = [
   {path: 'Contact', component: ContactComponent},
   {path: 'Logout', component: LogoutComponent},
   {path: 'Support', component: SupportComponent},
-  {path: 'Vchat', component: VchatComponent}
+  {path: 'Vchat', component: VchatComponent},
+  {path: 'food', component: FoodComponent},
+  {path: 'event', component: EventComponent}
 ];
 
 @NgModule({
