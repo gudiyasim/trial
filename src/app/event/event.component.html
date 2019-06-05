@@ -1,3 +1,19 @@
-<p>
-  event works!
+<!---<p>
+    event works!
 </p>
+<div *ngFor='let user of users$'>
+    <h2>{{user.id}}</h2>
+    <h3>{{user.date}}</h3>
+    <h5>{{user.title.rendered}}</h5>
+    <img src={{user.featured_media.source_url}} alt="">
+</div>
+--->
+<article class="card-columns">
+    <div class="card" *ngFor="let user of users$">
+        <img class="card-img-top" [src]="user.featured_media.source_url || 'https://images.pexels.com/photos/50675/banquet-wedding-society-deco-50675.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'" alt="Card image">
+        <div class="card-body">
+            <p class="card-text">{{ user.title.rendered || 'No summary found' }}</p>
+            <p class="card-text"><small><a [href]="user.event_link" target="_blank" class="btn btn-primary">Read more</a></small></p>
+        </div>
+    </div>
+</article>

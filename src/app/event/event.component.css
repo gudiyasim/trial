@@ -1,0 +1,8 @@
+.card-img-top {
+    height: 270px;
+}
+
+.card-columns {
+    max-width: 1200px;
+    margin: auto;
+}
