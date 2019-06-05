@@ -19,11 +19,8 @@ import { RegisterComponent } from './register/register.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
-<<<<<<< HEAD
 import { SupportComponent } from './support/support.component';
-=======
 import { DataService } from './event/data.service';
->>>>>>> 2d63f66a0933c7aea9e977666f4513a1b2033122
 
 @NgModule({
   declarations: [

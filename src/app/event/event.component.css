@@ -12,3 +12,7 @@
     color: darkblue;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.card-text {
+    text-align: center;
+}

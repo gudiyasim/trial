@@ -6,3 +6,13 @@
 .card-img-top {
     height: 300px;
 }
+
+.card-text {
+    text-align: center;
+}
+
+.food-name {
+    font-size: 20px;
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

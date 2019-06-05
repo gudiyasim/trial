@@ -14,6 +14,7 @@ import { SupportComponent } from './support/support.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
+  {path: 'Home', component: HomeComponent},
   {path: 'Login', component: LoginComponent},
   {path: 'Link', component: LinkComponent},
   {path: 'Contact', component: ContactComponent},
