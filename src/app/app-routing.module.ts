@@ -16,7 +16,9 @@ const routes: Routes = [
   {path: 'Login', component: LoginComponent},
   {path: 'Link', component: LinkComponent},
   {path: 'Contact', component: ContactComponent},
-  {path: 'Logout', component: LogoutComponent}
+  {path: 'Logout', component: LogoutComponent},
+  {path: 'food', component: FoodComponent},
+  {path: 'event', component: EventComponent}
 ];
 
 @NgModule({
