@@ -4,33 +4,35 @@
   <img src="https://images.wallpaperscraft.com/image/flower_pink_petals_bud_close_up_119905_320x240.jpg" class="img-responsive img-thumnail" alt="" />
     </div>
     <div class="col-md-8">
-    <form action="">
+    <form (ngSubmit)="login(loginForm)" #loginForm="ngForm">
       <div class="form-group">
-        <label for="name">Username</label>
+        <label for="name">Email Address</label>
         <input
           class="form-control"
-          id="myInput"
-          type="text"
+          id="email"
+          type="email"
           value=''
-          placeholder="Please Enter your Name "
-          name="username"
-          [(ngModel)]="username"
+          placeholder="E-Post"
+          name="email"
+          [(ngModel)]="email"
         />
       </div>
       <div class="form-group">
         <label for="password">Password</label>
         <input
           class="form-control"
-          id="myInput"
+          id="password"
           type="password"
           value=''
-          placeholder="please enter password"
+          placeholder="password"
           name="password"
-          [(ngModel)]="password"
+          [(ngModel)]="password" required
         />
       </div>
-      <button type="submit" class="btn btn-primary" (click)="loginUser()">Submit
+      <button type="submit" class="btn btn-primary btn-block" [disabled]="!email||!password||password.length < 6 ">Login
       </button>
+
+      <p class="text-center">Plaese Do Registeration First !! <a href="/Register">Register</a></p>
      </form>
     </div>
   </div>

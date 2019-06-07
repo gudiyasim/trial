@@ -5,14 +5,17 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyBZ-R63kdC6909cBfy3TTpPBu3QR06nF_k",
-    authDomain: "wellbefy-75775.firebaseapp.com",
-    databaseURL: "https://wellbefy-75775.firebaseio.com",
-    projectId: "wellbefy-75775",
-    storageBucket: "wellbefy-75775.appspot.com",
-    messagingSenderId: "298874918285",
+    apiKey: "AIzaSyCORnWELifUadrub5KVfPs6_DtRHN3-esk",
+    authDomain: "netcom-cdb55.firebaseapp.com",
+    databaseURL: "https://netcom-cdb55.firebaseio.com",
+    projectId: "netcom-cdb55",
+    storageBucket: "netcom-cdb55.appspot.com",
+    messagingSenderId: "462895965291",
+    appId: '1:462895965291:web:91d49befd38a1dca'
   }
 };
+
+
 
 /*
  * For easier debugging in development mode, you can import the following file

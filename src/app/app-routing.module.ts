@@ -10,14 +10,23 @@ import { VchatComponent } from './vchat/vchat.component';
 import { ContactComponent } from './contact/contact.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HomeComponent } from './home/home.component';
+import { RegisterComponent } from './register/register.component';
+import { TodoComponent } from './todo/todo.component';
+
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
+  { path: 'Home', component: HomeComponent},
+  { path: 'Event', component: EventComponent},
   {path: 'Login', component: LoginComponent},
   {path: 'Link', component: LinkComponent},
-  {path: 'Contact', component: ContactComponent},
-  {path: 'Logout', component: LogoutComponent}
+  {path: 'Register', component: RegisterComponent},
+  {path: 'Food', component: FoodComponent},
+  { path: 'register', component: RegisterComponent},
+  { path: 'Vchat', component: VchatComponent}
 ];
+
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

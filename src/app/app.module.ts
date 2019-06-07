@@ -18,6 +18,8 @@ import { RegisterComponent } from './register/register.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { TodoComponent } from './todo/todo.component';
+import { HttpClientModule  } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,8 @@ import { FooterComponent } from './footer/footer.component';
     RegisterComponent,
     LogoutComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +43,9 @@ import { FooterComponent } from './footer/footer.component';
     FormsModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+  HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

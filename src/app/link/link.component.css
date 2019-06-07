@@ -1,0 +1,14 @@
+.container {
+background-color: yellowgreen;
+}
+.row{
+  max-width: 800px;
+  margin: auto;
+  background-color:palevioletred ;
+}
+.Linkimage{
+  max-width: 100%;
+  padding: 3%;
+  display: block;
+  margin: auto;
+}

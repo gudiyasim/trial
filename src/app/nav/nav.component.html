@@ -1,60 +1,31 @@
-<!-- <<nav class="navbar  navbar-expand-lg bg-light">
-    <a class="navbar-brand" routerLInk="/">NetCom</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#theNav" aria-expanded="false">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="theNav">
-      <ul class="navbar-nav">
-          <li class="nav-item">
-              <a routerLink="/" class="nav-link">Home</a>
-            </li>
-        <li class="nav-item">
-          <a routerLink="/Login" class="nav-link">Login</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/Link" class="nav-link">Link</a>
-        </li>
-        <li class="nav-item">
-          <a routerLink="/Contact" class="nav-link">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <div *ngIf="!(user | async)">
-    <a class="btn btn-outline-primary" routerLink="/Logout">Signout</a>
-    </div>
+<div
+  class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border bottom shadow-sm"
+>
+  <h4 class="my-o mr-md-auto font-weight-normal navbar-brand">NetCom</h4>
+  <nav>
+      <small>
+          <span *ngIf="user | async">Welcome {{ (user | async)?.email }} </span>
+        </small>
+    <a class="p-2 text-dark" routerLink="/Home"
+      >Home <span class="sr-only">(current)</span></a>
+
+    <a class="p-2 text-dark" routerLink="/Link">Link</a>
+    <a class="p-2 text-dark" routerLink="/Vchat">Chat</a>
+    <a class="p-2 text-dark" routerLink="/Event">Event</a>
+    <a class="p-2 text-dark" routerLink="/Food">Food</a>
+    <a class="p-2 text-dark" routerLink="/Support">Support</a>
   </nav>
 
-
-
-  div *ngIf="(user | async)">
-    <button class="btn btn-outline-secondary" (click)="signOut()">Sign Out</button>
-  </div> -->
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+  <div *ngIf="!(user | async)">
+    <a  routerLink="/Login" class="btn btn-outline-primary"
+      >Login</a
+    >
+    <a  routerLink="/Register" class="btn btn-outline-primary"
+      >Sign Up</a
+    >
+  </div>
+  <div *ngIf="user|async">
+    <button class="btn btn-outline-secondary" (click)="signOut()">Signout
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" routerLink="/Home">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/Login">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/Link">Link</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" routerLink="/Contact">Contact</a>
-            </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Help</a>
-          </li>
-          <div *ngIf="!(user | async)">
-              <a class="btn btn-outline-primary" routerLink="/Logout">Signout</a>
-          </div>
-        </ul>
-      </div>
-    </nav>
+  </div>
+</div>
