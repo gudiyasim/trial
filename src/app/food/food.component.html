@@ -1,3 +1,9 @@
-<p>
-  food works!
-</p>
+<article class="card-columns">
+    <div class="card" *ngFor="let food of foods$">
+        <img class="card-img-top" [src]="food.image || 'http://placehold.it/300'" alt="Card image">
+        <div class="card-body">
+            <p class="card-text food-name">{{ food.name || 'No summary found' }}</p>
+            <p class="card-text">{{food.meal}}</p>
+        </div>
+    </div>
+</article>

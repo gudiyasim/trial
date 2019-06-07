@@ -14,12 +14,15 @@ import { FoodComponent } from './food/food.component';
 import { EventComponent } from './event/event.component';
 import { VchatComponent } from './vchat/vchat.component';
 import { ContactComponent } from './contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { TodoComponent } from './todo/todo.component';
-import { HttpClientModule  } from '@angular/common/http';
+
+import { SupportComponent } from './support/support.component';
+import { DataService } from './event/data.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,7 @@ import { HttpClientModule  } from '@angular/common/http';
     LogoutComponent,
     HomeComponent,
     FooterComponent,
-    TodoComponent
+    SupportComponent
   ],
   imports: [
     BrowserModule,
@@ -44,7 +47,10 @@ import { HttpClientModule  } from '@angular/common/http';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
+
   HttpClientModule
+
+
 
   ],
   providers: [],

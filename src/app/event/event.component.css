@@ -1,0 +1,18 @@
+.card-img-top {
+    height: 270px;
+}
+
+.card-columns {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.event-name {
+    font-size: 20px;
+    color: darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.card-text {
+    text-align: center;
+}

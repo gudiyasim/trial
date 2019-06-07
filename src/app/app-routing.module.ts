@@ -10,19 +10,19 @@ import { VchatComponent } from './vchat/vchat.component';
 import { ContactComponent } from './contact/contact.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HomeComponent } from './home/home.component';
-import { RegisterComponent } from './register/register.component';
-import { TodoComponent } from './todo/todo.component';
-
+import { SupportComponent } from './support/support.component';
 
 const routes: Routes = [
-  { path: 'Home', component: HomeComponent},
-  { path: 'Event', component: EventComponent},
+  {path: '', component: HomeComponent},
+  {path: 'Home', component: HomeComponent},
   {path: 'Login', component: LoginComponent},
   {path: 'Link', component: LinkComponent},
-  {path: 'Register', component: RegisterComponent},
-  {path: 'Food', component: FoodComponent},
-  { path: 'register', component: RegisterComponent},
-  { path: 'Vchat', component: VchatComponent}
+  {path: 'Contact', component: ContactComponent},
+  {path: 'Logout', component: LogoutComponent},
+  {path: 'Support', component: SupportComponent},
+  {path: 'Vchat', component: VchatComponent},
+  {path: 'food', component: FoodComponent},
+  {path: 'event', component: EventComponent}
 ];
 
 
