@@ -1,4 +1,4 @@
-<div
+<!----<div
   class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border bottom shadow-sm"
 >
   <h4 class="my-o mr-md-auto font-weight-normal navbar-brand">NetCom</h4>
@@ -30,7 +30,7 @@
   </div>
 </div>
 
-
+----->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">NetCom</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,22 +52,30 @@
                 <a class="nav-link" routerLink="/food">Food</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLink="/Vchat">Vchat</a>
+                <a class="nav-link" routerLink="/Login">Chat</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" routerLink="/Support">Support</a>
             </li>
 
-            <li class="nav-item">
+         <!-----   <li class="nav-item">
                 <a class="nav-link" routerLink="/Login">Login</a>
             </li>
-            <!-----            <li class="nav-item">
+                        <li class="nav-item">
                 <a class="nav-link" routerLink="/Contact">Contact</a>
             </li>-->
-
             <div *ngIf="!(user | async)">
-                <a class="btn btn-outline-primary" routerLink="/Logout">Signout</a>
+                <a class="btn btn-outline-primary" routerLink="/Home">Signout</a>
             </div>
+            <div *ngIf="user|async">
+                <button class="btn btn-outline-secondary" (click)="signOut()">Signout
+                  </button>
+              </div>
+            <a  routerLink="/Register" class="btn btn-outline-primary"
+            >Sign Up</a>
+            <small >
+                <span *ngIf="user | async">Welcome {{ (user | async)?.email }} </span>
+              </small>
         </ul>
     </div>
 </nav>

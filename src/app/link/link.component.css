@@ -1,14 +1,55 @@
 .container {
-background-color: yellowgreen;
+background-color: white;
 }
 .row{
   max-width: 800px;
   margin: auto;
-  background-color:palevioletred ;
+  background-color:white ;
 }
 .Linkimage{
   max-width: 100%;
-  padding: 3%;
+  padding-bottom: 4%;
+  padding-top: 4%;
   display: block;
   margin: auto;
+}
+
+.container {
+  position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: lightblue;
+  color: black;
+  font-size: 20px;
+  font-family: monospace;
+  padding: 16px 32px;
 }

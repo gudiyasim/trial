@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { LogoutComponent } from './logout/logout.component';
 import { HomeComponent } from './home/home.component';
 import { SupportComponent } from './support/support.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -22,7 +23,8 @@ const routes: Routes = [
   {path: 'Support', component: SupportComponent},
   {path: 'Vchat', component: VchatComponent},
   {path: 'food', component: FoodComponent},
-  {path: 'event', component: EventComponent}
+  {path: 'event', component: EventComponent},
+  {path: 'Register', component: RegisterComponent}
 ];
 
 
